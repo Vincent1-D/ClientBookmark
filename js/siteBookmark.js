@@ -125,7 +125,7 @@ async function renderDeleteBookmarkForm(id) {
             <div class="bookmarkRow" bookmark_id=${Bookmark.Id}">
                 <div class="bookmarkContainer">
                     <div class="bookmarkLayout">
-                        <div class="bookmarkFavicon"><img src="https://www.google.com/s2/favicons?sz=32&domain_url=${Bookmark.Url}"></div>
+                        <div><img src="https://www.google.com/s2/favicons?sz=32&domain_url=${Bookmark.Url}"></div>
                         <div class="bookmarkTitle">${Bookmark.Title}</div>
                         <div class="bookmarkCategory">${Bookmark.Category}</div>
 
@@ -171,7 +171,7 @@ function renderBookmarkForm(bookmark = null) {
     $("#content").append(`
 
         <form class="form" id="bookmarkForm">
-               <div class="bookmarkFavicon"><img id="favionUrl" src="https://www.google.com/s2/favicons?sz=32&domain_url=${bookmark.Url}"></div>
+               <div><img id="favionUrl" src="https://www.google.com/s2/favicons?sz=32&domain_url=${bookmark.Url}"></div>
             <input type="hidden" name="Id" value="${bookmark.Id}"/>
 
             <label for="Title" class="form-label">Titre </label>
@@ -251,7 +251,7 @@ function renderBookmark(bookmark) {
         <div class="bookmarkContainer noselect" bookmark_id=${bookmark.Id}">
             <div class="bookmarkLayout">
 
-                <div class="bookmarkFavicon"><img src="https://www.google.com/s2/favicons?sz=32&domain_url=${bookmark.Url}"></div>
+                <div><img src="https://www.google.com/s2/favicons?sz=32&domain_url=${bookmark.Url}"></div>
 
                 <span class="bookmarkTitle">${bookmark.Title}</span>
                 
